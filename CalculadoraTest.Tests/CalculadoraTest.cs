@@ -1,10 +1,17 @@
 using Xunit;
-using CalculadoraTest; 
+using CalculadoraTest;
 
 namespace CalculadoraTest.Tests
 {
     public class CalculadoraTests
     {
+        [Fact]
+        public void Suma()
+        {
+            var calculadora = new Calculadora();
+            var resultado = calculadora.Sumar(20, 2);
+            Assert.Equal(22, resultado);
+        }
         [Fact]
         public void Resta()
         {
@@ -15,7 +22,7 @@ namespace CalculadoraTest.Tests
             int resultado = 5;
 
             //Probar codigo
-            int resultadoReal = calculadora.Restar(numero1, numero2); 
+            int resultadoReal = calculadora.Restar(numero1, numero2);
 
             //Verificacion
             Assert.Equal(resultado, resultadoReal);
@@ -32,12 +39,33 @@ namespace CalculadoraTest.Tests
 
             //Prueba
             int resultadoReal = calculadora.Multiplicar(num1, num2);
-            
+
 
             //Verificacion
             Assert.Equal(resultado, resultadoReal);
         }
 
+        [Fact]
+        public void Division()
+        {
+            var calculadora = new Calculadora();
+            var resultado = calculadora.Dividir(-20, 2);
+            Assert.Equal(10, resultado);
+        }
+
+        [Fact]
+        public void ingresarNumeroSuma()
+        {
+            var calculadora = new Calculadora();
+            Assert.Trows<ArgumentException>(() => calculadora.Sumar("x", "v"));
+        }
+
+        [Fact]
+        public void ingresarNumeroDivision()
+        {
+            var calculadora = new Calculadora();
+            Assert.Trows<ArgumentException>(() => calculadora.Dividir("x", "v"));
+        }
 
     }
 }
