@@ -31,7 +31,8 @@ namespace CalculadoraTest.Tests
             int resultado = 12;
 
             //Prueba
-            int resultadoReal = calculadora.Multiplicar(num1, num2); // Llama al método Multiplicar de tu calculadora
+            int resultadoReal = calculadora.Multiplicar(num1, num2);
+            
 
             //Verificacion
             Assert.Equal(resultado, resultadoReal);
