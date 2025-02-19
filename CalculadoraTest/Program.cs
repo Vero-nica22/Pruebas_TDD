@@ -12,17 +12,17 @@ namespace CalculadoraTest
 
         public int Restar(int num1, int num2)
         {
-            return numero1 - numero2;
+            return num1 - num2;
         }
 
         public int Multiplicar(int num1, int num2)
         {
-            return numero1 * numero2;
+            return num1 * num2;
         }
 
         public int Dividir(int num1, int num2)
         {
-            return numero1 / numero2;
+            return num1 / num2;
         }
 
     }
