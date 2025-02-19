@@ -8,23 +8,23 @@
     "net9.0": []
   },
   "packageFolders": {
-    "C:\\Users\\mcver\\.nuget\\packages\\": {},
+    "C:\\Users\\57301\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\mcver\\OneDrive\\pruebasTDD\\Pruebas_TDD\\CalculadoraTest\\Calculadora.csproj",
+      "projectUniqueName": "C:\\Users\\57301\\Documents\\NODO\\Pruebas_TDD\\CalculadoraTest\\Calculadora.csproj",
       "projectName": "Calculadora",
-      "projectPath": "C:\\Users\\mcver\\OneDrive\\pruebasTDD\\Pruebas_TDD\\CalculadoraTest\\Calculadora.csproj",
-      "packagesPath": "C:\\Users\\mcver\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\mcver\\OneDrive\\pruebasTDD\\Pruebas_TDD\\CalculadoraTest\\obj\\",
+      "projectPath": "C:\\Users\\57301\\Documents\\NODO\\Pruebas_TDD\\CalculadoraTest\\Calculadora.csproj",
+      "packagesPath": "C:\\Users\\57301\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\57301\\Documents\\NODO\\Pruebas_TDD\\CalculadoraTest\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\mcver\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\57301\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -33,6 +33,7 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
