@@ -54,17 +54,35 @@ namespace CalculadoraTest.Tests
         }
 
         [Fact]
-        public void ingresarNumeroSuma()
+        public void ingresarLetraSuma()
         {
             var calculadora = new Calculadora();
-            Assert.Trows<ArgumentException>(() => calculadora.Sumar("x", "v"));
+            var resultado = calculadora.Sumar("x", "v");
+            Aseert.Equal("Los valores ingresados no pueden ser letras", resultado);
         }
 
         [Fact]
-        public void ingresarNumeroDivision()
+        public void ingresarLetraResta()
         {
             var calculadora = new Calculadora();
-            Assert.Trows<ArgumentException>(() => calculadora.Dividir("x", "v"));
+            var resultado = calculadora.Restar("x", "v");
+            Aseert.Equal("Los valores ingresados no pueden ser letras", resultado);
+        }
+
+        [Fact]
+        public void ingresarLetraMulti()
+        {
+            var calculadora = new Calculadora();
+            var resultado = calculadora.Multiplicar("x", "v");
+            Aseert.Equal("Los valores ingresados no pueden ser letras", resultado);
+        }
+
+        [Fact]
+        public void ingresarLetraDivision()
+        {
+            var calculadora = new Calculadora();
+            var resultado = calculadora.Dividir("x", "v");
+            Assert.Equal("Los valores ingresados no pueden ser letras", resultado);
         }
 
     }
