@@ -50,7 +50,7 @@ namespace CalculadoraTest.Tests
         {
             var calculadora = new Calculadora();
             var resultado = calculadora.Dividir(-20, 2);
-            Assert.Equal(10, resultado);
+            Assert.Equal(-10, resultado);
         }
 
         [Fact]
